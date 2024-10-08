@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steen Papier Schaar</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Steen Papier Schaar</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section class="menu" id="thinking" style="display: none;">
+                <p>Bot is aan het denken...</p>
+            </section>
+            <section class="menu" id="won" style="display: none;"></section>
+            <section class="menu" id="choose">
+                <h2>Maak jouw keuze</h2>
+                <div class="choices">
+                    <img src="img/rock (1).png" alt="Kies Steen" onclick="choose(1)" class="icon rock_icon">
+                    <img src="img/rock-paper-scissors (1).png" alt="Kies Papier" onclick="choose(2)" class="icon paper_icon">
+                    <img src="img/schaar (1).png" alt="Kies Schaar" onclick="choose(3)" class="icon scissors_icon">
+                </div>
+            </section>
+        </div>
+        <div class="score-container">
+            <h2 id="score">Score: 0</h2>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Steen Papier Schaar</p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
